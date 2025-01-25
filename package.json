@@ -2,11 +2,14 @@
   "name": "web_event",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://githendraw.github.io/web_event",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "next": "15.1.6",
